@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="50dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color Picker"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/btnColorPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#F00"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#555555"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/strColor"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="#555555"
+                        android:imeOptions="actionDone"
+                        android:maxLength="8"
+                        android:padding="5dp"
+                        android:text="FFFF0000"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <SeekBar
+                android:id="@+id/colorR"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:max="255"
+                android:padding="30dp"
+                android:progress="128"
+                android:thumb="@drawable/seekbar_r_thumb" />
+
+            <SeekBar
+                android:id="@+id/colorG"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:max="255"
+                android:padding="30dp"
+                android:progress="128"
+                android:thumb="@drawable/seekbar_g_thumb" />
+
+            <SeekBar
+                android:id="@+id/colorB"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:max="255"
+                android:padding="30dp"
+                android:progress="128"
+                android:thumb="@drawable/seekbar_b_thumb" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
